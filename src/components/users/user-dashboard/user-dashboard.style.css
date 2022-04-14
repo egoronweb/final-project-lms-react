@@ -1,0 +1,32 @@
+.user-dashboard{
+    padding: 20px 150px;
+}
+.welcome-message{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-align: center;
+}
+.user-dashboard-btns{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0 100px;
+    margin-top: 50px;
+}
+a .user-dashboard-btn{
+    width: 150px;
+    padding: 15px;
+    color: white;
+}
+a .list-btn{
+    background-color: green;
+}
+a .borrowed-btn{
+    background-color: red;
+}
+a .inbox-btn{
+    background-color: blue;
+}

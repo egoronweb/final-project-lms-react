@@ -1,0 +1,29 @@
+.home-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+button{
+    padding: 10px 0;
+    width: 50%;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.guest-option-btn{
+    background-color: green;
+}
+.admin-option-btn{
+    background-color: red;
+}
+.login-title{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
