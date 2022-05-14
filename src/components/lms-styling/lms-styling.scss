@@ -1,0 +1,543 @@
+.wrapper{
+    min-height: 100vh;
+    background: url(https://s2982.pcdn.co/wp-content/uploads/2020/03/library-libraries-feature-700x375-1.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    .active{
+        color: red;
+    }
+
+
+    /*Header CSS*/
+    .top-nav-bar{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        background: linear-gradient(to right, rgb(0, 217, 255), rgb(0, 255, 85));
+
+
+        .mylogo{
+            font-size: 22px;
+            font-weight: 600;
+            transition: .3s;
+            
+            &:hover{
+                transform: scale(1.1);
+                text-decoration: underline;
+            }
+            a{
+                color: black;
+            }
+
+            span{
+                color: red;
+            }
+        }
+
+
+        .menu-texts{
+            display: inline-flex;
+
+            li{
+                padding: 0 15px;
+                position: relative;
+                margin-top: 10px;
+
+                &::before{
+                    content: '';
+                    height: 2px;
+                    width: 0;
+                    background-color: red;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: .5s;
+                }
+
+                &:hover::before{
+                    width: 100%;
+                }
+
+                a{
+                    color: black;
+                    font-weight: 600;
+                    transition: .5s;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: red;
+                    }
+
+                    &.active{
+                        color: red;
+                    }
+                }
+            }
+
+            span{
+                margin-top: 10px;
+                color: black;
+                font-weight: 600;
+                transition: .5s;
+                cursor: pointer;
+
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+
+
+
+    /*Homepage CSS*/
+    .content{
+        min-height: 100vh;
+
+        .home-title{
+            padding: 150px 100px;
+            
+            .home-title-content{
+               width: 50%;
+               min-width: 360px;
+               padding: 15px 10px;
+               background-color: rgba(128, 128, 128, 0.509);
+               border: 5px dotted white;
+
+                h1{
+                    font-size: 48px;
+                    font-weight: 700;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .home-buttons{
+
+            button{
+                width: 100px;
+                margin: 20px 10px;
+                cursor: pointer;
+                border: none;
+                color: black;
+                font-weight: 700;
+            }
+
+            .btn-home{
+                background-color: rgb(0, 217, 255);
+                padding: 10px 5px;
+                transition: .5s;
+
+                &:hover{
+                    background-color: rgb(0, 255, 85);
+                }
+            }
+        }
+
+        /*About CSS*/
+
+        .content-about{
+            color: black;
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            text-indent: 30px;
+            text-align: justify;
+            background-color: white;
+
+            .about-title{
+                margin-bottom: 20px;
+
+                .about-title-underliner{
+                    height: 2px;
+                    width: 100%;
+                    background-color: black;
+                }
+            }
+            .about-content-texts{
+
+                .about-content-texts-ending{
+                    width: 100%;
+                    height: 2px;
+                    background-color: black;
+                }
+            }
+        }
+        /*Inboxes CSS*/
+        .user-inbox{
+            padding: 50px 0;
+
+            .inbox-form{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                background-color: rgba(128, 128, 128, 0.753);
+    
+                .inbox-form-btns{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+    
+                    a{
+                        text-decoration: none;
+                        width: 45%;
+                        button{
+                            width: 100%;font-weight: 600;
+                            padding: 15px 0;
+                            border: none;
+                            background-color: rgb(0, 217, 255);
+                        }
+    
+                        .active{
+                            background-color: rgb(0, 255, 85);
+                        }
+                    }
+                }
+    
+                .table-inbox{
+                    width: 90%;
+                    text-align: center;
+                    border-collapse: collapse;
+                    margin: 0 auto;
+    
+                    thead, th, tr, tbody, td{
+                       border-bottom: 1px solid black;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+
+        .inbox-form{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: rgba(128, 128, 128, 0.68);
+        }
+
+
+
+        /*UserRegister CSS*/
+        .register-form{
+            width: 360px;
+            height: auto;
+            padding: 10px;
+            box-shadow: 2px 5px 10px black;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(174, 174, 174, 0.731));
+
+            p{
+                a{
+                    color: white;
+                    &:hover{
+                        color: blue;
+                    }
+                }
+            }
+            .register-title{
+
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+        .content-form{
+
+
+            /*Login CSS*/
+            .login-form{
+                width: 360px;
+                height: 600px;
+                height: auto;
+                padding: 20px;
+                box-shadow: 2px 5px 10px black;
+                margin: 100px auto;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(174, 174, 174, 0.731));
+                border-radius: 20px;
+
+                p{
+                    a{
+                        color: white;
+                        &:hover{
+                            color: blue;
+                        }
+                    }
+                }
+                
+                span{
+                    color: rgb(0, 217, 255);
+                    font-weight: 700;
+                    text-decoration: underline;
+                    font-size: 24px;
+                }
+
+                .form-btn-options{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    a{
+                        width: 45%;
+    
+                        button{
+                            width: 100%;
+                            padding: 10px 5px;
+                            cursor: pointer;
+                            border: none;
+                            font-weight: 600;
+                            transition: .5s;
+
+                            &:hover{
+                                background-color: rgb(0, 255, 85);
+                            }
+                        }
+                    }
+
+                    .active{
+                        background-color: rgb(0, 217, 255);
+                    }
+                }
+            }
+            .login-title{
+                font-size: 20px;
+                padding: 15px 0;
+                text-align: center;
+            }
+
+        }
+
+         /*UserRegister CSS*/
+         .register-form{
+            width: 360px;
+            height: 600px;
+            height: auto;
+            padding: 20px;
+            box-shadow: 2px 5px 10px black;
+            margin: 100px auto;
+        }
+
+        .edit-form{
+            width: 360px;
+            height: 600px;
+            height: auto;
+            padding: 20px;
+            box-shadow: 2px 5px 10px black;
+            margin: 100px auto;
+            background: linear-gradient(to right, rgba(29, 29, 29, 0.747), rgba(182, 181, 181, 0.737));
+        }
+
+        .inbox-form{
+            width: 600px;
+            height: auto;
+            padding: 20px;
+            box-shadow: 2px 5px 10px black;
+            margin: 20px auto;
+        }
+
+
+        /*Dashboard CSS*/
+
+        .dashboard{
+            width: 600px;
+            margin: 100px auto;
+            text-align: center;
+
+            .welcome-message{
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .dashboard-btns{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                a{
+                    button{
+                        min-width: 150px;
+                        padding: 10px 10px;
+                        border: none;
+                        transition: .5s;
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .list-btn{
+                        background-color: green;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    .borrowed-btn{
+                        background-color: blue;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    .inbox-btn{
+                        background-color: red;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Books CSS*/
+        .books{
+           margin: 20px auto;
+
+           .books-management-btns{
+               margin: 30px 0 20px 55px;
+
+               .books-management-btn{
+                   width: 100px;
+                   padding: 10px 0;
+                   margin: 0 10px;
+                   transition: .5s;
+
+                   &:hover{
+                       transform: scale(1.1);
+                   }
+               }
+           }
+
+           .title{
+               font-size: 24px;
+               font-weight: 600;
+               text-align: center;
+           }
+          
+
+            .table-books{
+                width: 90%;
+                text-align: center;
+                border-collapse: collapse;
+                margin: 0 auto;
+                background-color: rgba(255, 255, 255, 0.747);
+                color: black;
+
+                thead, th, tr, td{
+                    border: 1px solid black;
+                    padding: 5px 0;
+                }
+                .select-checkbox{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        /*Students Management CSS*/
+        .users-management-list{
+            width: 90%;
+            margin: 20px auto;
+
+            .title{
+                font-size: 38px;
+                text-align: center;
+                margin-bottom: 20px;
+                margin-top: 50px;
+                font-weight: 600;
+            }
+
+            .user-table-management{
+                width: 90%;
+                text-align: center;
+                border-collapse: collapse;
+                margin: 0 auto;
+                background-color: rgba(255, 255, 255, 0.765);
+                color: black;
+
+                thead, th, tr, td{
+                    border: 1px solid black;
+                    padding: 5px 0;
+
+                    button{
+                        min-width: 60px;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*Footer CSS*/
+    .footer{
+        width: 100%;
+        min-height: 60px;
+        height: auto;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+
+        .footer-left{
+            display: flex;
+            flex-direction: column;
+
+            span{
+                padding: 5px 0;
+                cursor: pointer;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-center{
+
+            .footer-link{
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-right{
+
+            img{
+                width: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: .5s;
+                padding: 0 10px;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+
+
+    /*UserLogin CSS*/
+}
